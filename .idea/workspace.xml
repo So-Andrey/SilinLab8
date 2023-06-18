@@ -5,71 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd17ef99-7189-46dd-9634-de760d17435b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/Authentication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/ConsoleColors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/ConsoleUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/builders/CoordinatesBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/builders/FuelTypeBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/builders/IntegerBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/builders/NameBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/builders/UserBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/builders/VehicleBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/builders/VehicleTypeBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/AddCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/ClearCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/ExecuteScriptCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/GroupCountingByNameCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/HelpCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/InfoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/MinByNumOfWheelsCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/PrintAscendingCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/RemoveAtCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/RemoveByIdCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/RemoveLowerCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/ReorderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/SaveCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/ShowCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/list/UpdateCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/controller/VehicleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/controller/VehicleControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/dao/VehicleDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/dao/VehicleDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/database/DataBaseProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/exceptions/ArgumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/exceptions/FileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/exceptions/ValidationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/model/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/model/FuelType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/model/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/model/VehicleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/services/CurrentUserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/services/GsonLocalDateTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/services/ScriptManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/sql/PropertiesProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/sql/SQLConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/utils/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/validation/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tables.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/a12/Documents/ITMO/Programming/JavaLabs/Orders/ordersWAndrew/Silin/lab7",
+    "last_opened_file_path": "/home/alex/Документы/code/java/orders/SemenSwallow",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -210,6 +147,7 @@
       <workItem from="1685464897704" duration="12383000" />
       <workItem from="1685519841311" duration="2118000" />
       <workItem from="1687129736092" duration="250000" />
+      <workItem from="1687130239435" duration="98000" />
     </task>
     <servers />
   </component>
