@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd17ef99-7189-46dd-9634-de760d17435b" name="Changes" comment="">
+    <list default="true" id="fd17ef99-7189-46dd-9634-de760d17435b" name="Changes" comment="Added javafx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/gui/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/gui/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/gui/controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/gui/controllers/MapController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/gui/controllers/TableController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/alex/Документы/code/java/orders/SemenSwallow",
+    "last_opened_file_path": "/home/alex/Документы/code/java/orders/SilinLab8/src/main/java/client",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,6 +69,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/client" />
       <recent name="C:\code\java\orders\Silin\lab7\src\main\java\server" />
       <recent name="C:\code\java\orders\Silin\lab7" />
       <recent name="C:\code\java\orders\Silin\lab7\src\main\java" />
@@ -147,8 +153,16 @@
       <workItem from="1685464897704" duration="12383000" />
       <workItem from="1685519841311" duration="2118000" />
       <workItem from="1687129736092" duration="250000" />
-      <workItem from="1687130239435" duration="98000" />
+      <workItem from="1687130239435" duration="625000" />
     </task>
+    <task id="LOCAL-00001" summary="Added javafx">
+      <created>1687130552127</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687130552127</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,5 +178,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added javafx" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added javafx" />
   </component>
 </project>

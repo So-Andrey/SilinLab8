@@ -1,5 +1,6 @@
 import client.Authentication;
 import client.ConsoleUI;
+import client.gui.Launcher;
 import server.commands.Invoker;
 import server.controller.VehicleController;
 import server.controller.VehicleControllerImpl;
@@ -16,18 +17,6 @@ public class App {
      * @param args the input arguments
      */
     public static void main(String[] args) {
-        try {
-            CurrentUserManager userManager = new CurrentUserManager();
-            VehicleController controller = new VehicleControllerImpl(userManager);
-
-            Authentication authentication = new Authentication(controller, userManager);
-
-            ConsoleUI session = new ConsoleUI(new Invoker(authentication.start()));
-            session.start();
-        } catch (FileException e) {
-            System.out.println(e.getMessage());
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Необходимо ввести название файла базы данных при запуске программы.");
-        }
+        Launcher.main(args);
     }
 }
