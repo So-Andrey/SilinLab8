@@ -133,7 +133,7 @@ public class MapController {
             imageView.setFitHeight(40);
             circle.setOnMouseEntered(event -> pane_map.getChildren().add(imageView));
             circle.setOnMouseExited(event -> pane_map.getChildren().remove(imageView));
-        } catch (NumberFormatException ignored) {}
+        } catch (NullPointerException ignored) {}
 
         circle.setOnMouseClicked(event ->{
             ImageView view = new ImageView("/images/car_map.png");
