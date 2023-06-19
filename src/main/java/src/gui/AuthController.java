@@ -78,12 +78,12 @@ public class AuthController {
         updateLanguage();
     }
     @FXML
-    void setButton_hu() {
+    void setButton_sv() {
         GUI.setAppLanguage(Language.sv);
         updateLanguage();
     }
     @FXML
-    void setButton_mk() {
+    void setButton_et() {
         GUI.setAppLanguage(Language.et);
         updateLanguage();
     }

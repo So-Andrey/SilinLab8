@@ -60,11 +60,11 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button layoutX="12.0" layoutY="107.0" mnemonicParsing="false" onAction="#setButton_hu" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #068E97; -fx-background-radius: 10;" text="Hungarian">
+            <Button layoutX="12.0" layoutY="107.0" mnemonicParsing="false" onAction="#setButton_sv" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #068E97; -fx-background-radius: 10;" text="Hungarian">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
-            <Button layoutX="12.0" layoutY="139.0" mnemonicParsing="false" onAction="#setButton_mk" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #068E97; -fx-background-radius: 10;" text="Makedóniai">
+            <Button layoutX="12.0" layoutY="139.0" mnemonicParsing="false" onAction="#setButton_et" prefHeight="9.0" prefWidth="155.0" style="-fx-background-color: #068E97; -fx-background-radius: 10;" text="Makedóniai">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor></Button>
