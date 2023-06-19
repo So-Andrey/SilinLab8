@@ -1,16 +1,20 @@
 package src.gui;
 
+import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.geometry.Bounds;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.effect.Reflection;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 import src.database.UserAuthentication;
 import src.localization.Language;
 import src.vehicleData.Coordinates;
@@ -21,8 +25,8 @@ import static javafx.scene.paint.Color.RED;
 import static src.gui.Utils.showInfo;
 
 public class MapController {
-    private static final int WIDTH = 732;
-    private static final int HEIGHT = 509;
+    private static final int WIDTH = 797;
+    private static final int HEIGHT = 540;
     private static final double CENTER_X = WIDTH / 2.0;
     private static final double CENTER_Y = HEIGHT / 2.0;
     private static final double LOG_SCALE = 50;
@@ -32,17 +36,15 @@ public class MapController {
     @FXML private Button Button_table;
     @FXML private Label Label_map;
     @FXML private Pane pane_map;
-    @FXML private ImageView iv_gif;
- 
+    @FXML private ImageView iv_car_map;
     @FXML
     void initialize() {
         updateLanguage();
         Label_currentUser.setText("username: " + UserAuthentication.getCurrentUser());
         drawAxes();
-        Coordinates coordinates = new Coordinates(1000, -10000);
-        displayCoordinates(coordinates);
         drawAxes();
         VehicleCollection.getVehicle().forEach(this::displayVehicle);
+        iv_car_map.setVisible(false);
     }
 
     @FXML
@@ -84,17 +86,6 @@ public class MapController {
         int blue = hashCode & 0x0000FF;
         return Color.rgb(red, green, blue);
     }
-    private void displayCoordinates(Coordinates coordinates) {
-        double displayX = CENTER_X + coordinates.getX();
-        double displayY = CENTER_Y - coordinates.getY();
-
-        Circle circle = new Circle(displayX, displayY, 5, RED);
-        circle.setOnMouseClicked(event -> {
-            Text text = new Text(event.getSceneX(), event.getSceneY(), ("(" + coordinates.getX() + ", " + coordinates.getY() + ")").replace(".", GUI.getAppLanguage().getString("separator")));
-            pane_map.getChildren().add(text);
-        });
-        pane_map.getChildren().add(circle);
-    }
 
     @FXML
     void setButton_help() {
@@ -111,6 +102,7 @@ public class MapController {
         pane_map.getScene().getWindow().hide();
         GUI.openMainWindow();
     }
+    @FXML private AnchorPane ap_main;
     private void displayVehicle(Vehicle vehicle) {
         double scaledX = CENTER_X;
         double scaledY = CENTER_Y;
@@ -145,20 +137,34 @@ public class MapController {
             circle.setOnMouseExited(event -> pane_map.getChildren().remove(imageView));
         } catch (NumberFormatException ignored) {}
 
-        circle.setOnMouseClicked(event -> {
-            iv_gif.setImage(new Image("/assets/gif.gif"));
-            ImageView iv = new ImageView(new Image("/assets/gif2.gif"));
-            iv.setX(clampedX);
-            iv.setY(clampedY);
-            iv.setFitWidth(80);
-            iv.setFitHeight(62);
-            pane_map.getChildren().add(iv);
+        circle.setOnMouseClicked(event ->{
+            ImageView view = new ImageView("/images/car_map.png");
+            view.setVisible(true);
+            ap_main.getChildren().add(view);
+            moveImageView(view);
             Utils.showInfo(vehicle.getName() + " " + GUI.getAppLanguage().getString("info"), vehicle.toString());
         });
 
         pane_map.getChildren().add(circle);
     }
 
+    private void moveImageView(ImageView imageView) {
+        imageView.setFitWidth(iv_car_map.getFitWidth());
+        imageView.setFitHeight(iv_car_map.getFitHeight());
+
+        imageView.setLayoutY(iv_car_map.getY());
+        imageView.setLayoutX(-imageView.getBoundsInParent().getWidth());
+
+        //Задать движение, которое будет длиться 5 секунд изображением
+        TranslateTransition transition = new TranslateTransition(Duration.seconds(5), imageView);
+        //Поехать до точки
+        transition.setToX(WIDTH + imageView.getBoundsInParent().getWidth() + 300);
+
+        // Вернуть на место
+        transition.setOnFinished(event -> imageView.setVisible(false));
+
+        transition.play();
+    }
     private String parseTypeToImage(VehicleType vehicleType){
         return switch (vehicleType){
             case PLANE -> "/images/airplane.png";
