@@ -2,6 +2,8 @@ package src.gui;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
 import javafx.geometry.Insets;
 import javafx.scene.Cursor;
@@ -21,6 +23,7 @@ import src.localization.Language;
 import src.vehicleData.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import static src.gui.Utils.showInfo;
@@ -96,6 +99,9 @@ public class MainController {
     private TableView<Vehicle> table;
 
     @FXML
+    private TextField tf_search;
+
+    @FXML
     void initialize() {
         updateLanguage();
         setTableColumns();
@@ -117,8 +123,17 @@ public class MainController {
         TableColumn_coordinates.setCellValueFactory(vehicle -> new SimpleStringProperty((vehicle.getValue().getCoordinates().getX() + "; " + vehicle.getValue().getCoordinates().getY()).replace(".", GUI.getAppLanguage().getString("separator"))));
     }
 
+    //private void updateTable() { table.setItems(FXCollections.observableList(VehicleCollection.getVehicle())); }
+
     private void updateTable() {
-        table.setItems(FXCollections.observableList(VehicleCollection.getVehicle()));
+        FilteredList<Vehicle> filteredData = new FilteredList<>(FXCollections.observableList(new ArrayList<>(VehicleCollection.getVehicle())), b -> true);
+        tf_search.textProperty().addListener((observable, oldValue, newValue) -> filteredData.setPredicate(vehicle -> {
+            if (newValue.trim().isEmpty()) return true;
+            return vehicle.getName().toLowerCase().contains(newValue.toLowerCase());
+        }));
+        SortedList<Vehicle> sortedData = new SortedList<>(filteredData);
+        sortedData.comparatorProperty().bind(table.comparatorProperty());
+        table.setItems(sortedData);
     }
 
     @FXML
@@ -127,7 +142,7 @@ public class MainController {
         primaryStage.setMaximized(false);
         primaryStage.setResizable(false);
         GridPane gridPane = new GridPane();
-        gridPane.setStyle("-fx-background-color: #92A1D6");
+        gridPane.setStyle("-fx-background-color: #C89E9E");
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(10);
         gridPane.setVgap(10);
@@ -297,7 +312,7 @@ public class MainController {
         primaryStage.setMaximized(false);
         primaryStage.setResizable(false);
         GridPane gridPane = new GridPane();
-        gridPane.setStyle("-fx-background-color: #92A1D6");
+        gridPane.setStyle("-fx-background-color: #C89E9E");
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(10);
         gridPane.setVgap(10);
@@ -401,12 +416,12 @@ public class MainController {
     }
     @FXML
     void setButton_hu() {
-        GUI.setAppLanguage(Language.hu);
+        GUI.setAppLanguage(Language.sv);
         updateLanguage();
     }
     @FXML
     void setButton_mk() {
-        GUI.setAppLanguage(Language.mk);
+        GUI.setAppLanguage(Language.et);
         updateLanguage();
     }
     @FXML
@@ -446,7 +461,7 @@ public class MainController {
         primaryStage.setMaximized(false);
         primaryStage.setResizable(false);
         GridPane gridPane = new GridPane();
-        gridPane.setStyle("-fx-background-color: #92A1D6");
+        gridPane.setStyle("-fx-background-color: #C89E9E");
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(10);
         gridPane.setVgap(10);
@@ -511,7 +526,7 @@ public class MainController {
         primaryStage.setMaximized(false);
         primaryStage.setResizable(false);
         GridPane gridPane = new GridPane();
-        gridPane.setStyle("-fx-background-color: #92A1D6");
+        gridPane.setStyle("-fx-background-color: #C89E9E");
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(10);
         gridPane.setVgap(10);
@@ -548,7 +563,7 @@ public class MainController {
         primaryStage.setMaximized(false);
         primaryStage.setResizable(false);
         GridPane gridPane = new GridPane();
-        gridPane.setStyle("-fx-background-color: #92A1D6");
+        gridPane.setStyle("-fx-background-color: #C89E9E");
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(10);
         gridPane.setVgap(10);
@@ -595,7 +610,7 @@ public class MainController {
         primaryStage.setMaximized(false);
         primaryStage.setResizable(false);
         GridPane gridPane = new GridPane();
-        gridPane.setStyle("-fx-background-color: #92A1D6");
+        gridPane.setStyle("-fx-background-color: #C89E9E");
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(10);
         gridPane.setVgap(10);

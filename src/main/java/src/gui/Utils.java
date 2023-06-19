@@ -12,9 +12,9 @@ public class Utils {
         alert.setHeaderText(null);
         alert.setContentText(info);
         DialogPane dialogPane = alert.getDialogPane();
-        dialogPane.setStyle("-fx-background-color: #92A1D6");
+        dialogPane.setStyle("-fx-background-color: #C89E9E");
         Button ok = (Button) alert.getDialogPane().lookupButton(ButtonType.OK);
-        ok.setStyle("-fx-background-color: #7E7ED0; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #2D2C50; -fx-cursor: HAND;");
+        ok.setStyle("-fx-background-color: #F7E8E8; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #661B1B; -fx-cursor: HAND;");
         alert.showAndWait();
     }
 }

@@ -5,65 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd17ef99-7189-46dd-9634-de760d17435b" name="Changes" comment="init;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/src/localization/GUILabels_et.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/src/localization/GUILabels_sv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Authentication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ConsoleColors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/ConsoleUI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/gui/Launcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/gui/utils/SpecialWindows.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/builders/CoordinatesBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/builders/FuelTypeBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/builders/IntegerBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/builders/NameBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/builders/UserBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/builders/VehicleBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/builders/VehicleTypeBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Invoker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/AddCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/ClearCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/ExecuteScriptCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/ExitCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/GroupCountingByNameCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/HelpCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/InfoCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/MinByNumOfWheelsCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/PrintAscendingCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/RemoveAtCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/RemoveByIdCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/RemoveLowerCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/ReorderCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/SaveCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/ShowCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/list/UpdateCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/controller/VehicleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/controller/VehicleControllerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/dao/VehicleDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/dao/VehicleDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/database/DataBaseProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/exceptions/ArgumentException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/exceptions/FileException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/exceptions/ValidationException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/model/Coordinates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/model/FuelType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/model/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/model/VehicleType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/services/CurrentUserManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/services/GsonLocalDateTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/services/ScriptManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/sql/PropertiesProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/sql/SQLConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/utils/Parser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/validation/Validation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tables.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/gui/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/gui/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/gui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/gui/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/gui/MapController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/gui/MapController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/gui/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/gui/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/localization/GUILabels_hu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/localization/GUILabels_mk.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/src/localization/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/src/localization/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +65,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alex/Документы/code/java/orders/SemenSwallow&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/a12/Documents/ITMO/Programming/JavaLabs/Orders/ordersWAndrew/Silin/SilinLab8/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -131,6 +84,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="C:\code\java\orders\Silin\lab7\src\main\java\server" />
       <recent name="C:\code\java\orders\Silin\lab7" />
       <recent name="C:\code\java\orders\Silin\lab7\src\main\java" />
@@ -218,6 +172,7 @@
       <workItem from="1687131304320" duration="45000" />
       <workItem from="1687131694111" duration="449000" />
       <workItem from="1687132363572" duration="6000" />
+      <workItem from="1687133486718" duration="1994000" />
     </task>
     <servers />
   </component>

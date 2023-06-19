@@ -52,12 +52,12 @@ public class MapController {
     }
     @FXML
     void setButton_hu() {
-        GUI.setAppLanguage(Language.hu);
+        GUI.setAppLanguage(Language.sv);
         updateLanguage();
     }
     @FXML
     void setButton_mk() {
-        GUI.setAppLanguage(Language.mk);
+        GUI.setAppLanguage(Language.et);
         updateLanguage();
     }
     @FXML

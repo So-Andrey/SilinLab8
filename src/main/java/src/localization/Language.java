@@ -5,12 +5,12 @@ import java.util.ResourceBundle;
 
 public class Language {
 
-    public static final ResourceBundle mk = ResourceBundle.getBundle("src.localization.GUILabels", new Locale("mk", "MK"));
+    public static final ResourceBundle sv = ResourceBundle.getBundle("src.localization.GUILabels", new Locale("sv", "SV"));
 
     public static final ResourceBundle ru = ResourceBundle.getBundle("src.localization.GUILabels", new Locale("ru", "RU"));
 
-    public static final ResourceBundle hu = ResourceBundle.getBundle("src.localization.GUILabels", new Locale("hu", "HU"));
+    public static final ResourceBundle et = ResourceBundle.getBundle("src.localization.GUILabels", new Locale("et", "ET"));
 
-    public static final ResourceBundle es = ResourceBundle.getBundle("src.localization.GUILabels", new Locale("es", "EC"));
+    public static final ResourceBundle es = ResourceBundle.getBundle("src.localization.GUILabels", new Locale("es", "ES"));
 
 }
