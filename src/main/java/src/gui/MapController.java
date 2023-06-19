@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.geometry.Bounds;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.effect.Reflection;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -13,7 +12,6 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
-import javafx.scene.text.Text;
 import javafx.util.Duration;
 import src.database.UserAuthentication;
 import src.localization.Language;
@@ -21,7 +19,7 @@ import src.vehicleData.Coordinates;
 import src.vehicleData.Vehicle;
 import src.vehicleData.VehicleCollection;
 import src.vehicleData.VehicleType;
-import static javafx.scene.paint.Color.RED;
+
 import static src.gui.Utils.showInfo;
 
 public class MapController {
@@ -142,7 +140,7 @@ public class MapController {
             view.setVisible(true);
             ap_main.getChildren().add(view);
             moveImageView(view);
-            Utils.showInfo(vehicle.getName() + " " + GUI.getAppLanguage().getString("info"), vehicle.toString());
+            Utils.showVehicle(vehicle);
         });
 
         pane_map.getChildren().add(circle);
